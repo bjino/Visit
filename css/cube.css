@@ -1,0 +1,90 @@
+.wrap {
+  margin-top: 150px;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+.cube {
+  margin: auto;
+  position: relative;
+  height: 400px;
+  width: 400px;
+  transform-style: preserve-3d;
+}
+
+.cube > div {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  border: solid 1px #eeeeee;
+  color: #ffffff;
+}
+
+.front {
+  transform: translateZ(200px);
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.back {
+  transform: translateZ(-200px) rotateY(180deg);
+  background: url(http://img15.deviantart.net/0e30/i/2013/081/6/3/glory_days__by_pascalcampion-d5yv2ou.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.right {
+  transform: rotateY(-270deg) translateX(200px);
+  transform-origin: top right;
+  background: url(http://www.bringchange.in/wp-content/uploads/2015/05/Breakfast_by_PascalCampion.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.left {
+  transform: rotateY(270deg) translateX(-200px);
+  transform-origin: center left;
+  background-color:white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.top {
+  transform: rotateX(-270deg) translateY(-200px);
+  transform-origin: top center;
+    background: url(http://api.ning.com/files/kV4MbYiv7oTb0Y2A70Gubl9o6GonrxcdXuwJr4a24eKDrBW2MamOzbZuWMEGFE9GaKkEOw7cqppMYjRjjGp3PMNFixzAOaXX/1082044758.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bottom {
+  transform: rotateX(270deg) translateY(200px);
+  transform-origin: bottom center;
+    background: url(http://api.ning.com/files/kV4MbYiv7oTb0Y2A70Gubl9o6GonrxcdXuwJr4a24eKDrBW2MamOzbZuWMEGFE9GaKkEOw7cqppMYjRjjGp3PMNFixzAOaXX/1082044758.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  
+  to {
+    transform: rotateX(0deg) rotateY(360deg);
+  }
+}
+
+.cube {
+  animation: rotate 30s infinite linear;
+}

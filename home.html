@@ -23,7 +23,7 @@
         <link rel="stylesheet" href="css/navbar-pretty.css">
         <link rel="stylesheet" href="css/cube.css">
         <link rel="stylesheet" href="css/login-modal.css">
-        <link rel="stylesheet" href="css/signup.css">
+        <link rel="stylesheet" href="css/signup.css"
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
@@ -50,21 +50,6 @@
 
 
 <!-- SIGNUP MODAL -->
-<div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-        <div class="modal-dialog">
-        <div class="loginmodal-container">
-            <div id="lamp">
-              <input type="radio" name="switch" value="on" />
-              <input type="radio" name="switch" value="off" checked="checked"/>
-              <label for="switch" class="entypo-lamp"></label>
-              <div class="lamp">
-                <div class="gonna-give-light"></div>
-              </div>
-            </div>
-        </div>
-      </div>
-      </div>
-
 
 
 
@@ -80,7 +65,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Visit<br><h6>A place for beautiful minds</h6></a>
+          <a class="navbar-brand" href="index.html">Visit<br><h6>A place for beautiful minds</h6></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-left" role="form">
@@ -111,8 +96,13 @@
         </li>
               <li><a href="#">Upload</a></li>
               <li><a href="#">Blog</a></li>
-              <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
-              <li><a href="#" data-toggle="modal" data-target="#signup-modal">Signup</a></li>
+              <u1 class ="nav navbar-nav navbar-right">
+           <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">&#9730; &nbsp; Byron123 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="popular.html">Portfolio</a></li>
+            <li><a href="#">Messages</a></li>
+            <li><a href="index.html">Logout</a></li>
           </u1>
         </div><!--/.navbar-collapse -->
       </div>
@@ -120,13 +110,36 @@
 
 
     <div class="container" id="theBody">
-      <div id="lamp">
-  <input type="radio" name="switch" value="on" />
-  <input type="radio" name="switch" value="off" checked="checked"/>
-  <label for="switch" class="entypo-lamp"></label>
-  <div class="lamp">
-    <div class="gonna-give-light"></div>
-  </div>
+      <!-- Example row of columns -->
+        <div class="wrap">
+        <div class="cube">
+        <div class="front">
+          <iframe width="100%" height="100%" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/213886153&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+        </div>
+        <div class="back">
+          Artist: Glenn
+        </div>
+        <div class="top">
+          Charu
+        </div>
+        <div class="bottom">
+          Alyssa
+        </div>
+        <div class="left">
+          <div class = "gallery">
+            <div class ="cubePart" id="cp1" class="left"></div>
+            <div class ="cubePart" id="cp2"></div>
+            <div class ="cubePart" id="cp3" class="left"></div>
+            <div class ="cubePart" id="cp4"></div>
+            <div class ="cubePart" id="cp5" class="left"></div>
+            <div class ="cubePart" id="cp6"></div>
+          </div>
+        </div>
+        <div class="right">
+          <iframe src="https://player.vimeo.com/video/119343870" width="100%" height="100%" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+          </iframe>
+        </div>
+        </div>
 </div>
     </div> 
 

@@ -1,0 +1,315 @@
+
+
+/**
+ *  Section for styling the images on the categories page.
+ *  This includes all of the content such as the headers.
+ */
+
+
+.headers {
+    line-height: 5%;
+    padding-top: 1%;
+}
+
+.content_divider {
+	margin-left: 250px;
+}
+
+.content_container {
+	padding-bottom:20px;
+	background-color: white;
+}
+
+
+.headerPaint {
+	clear: left; /* allows for content to go beneath div content */
+	margin-left: 250px;
+	line-height: 5%;
+	padding-top: 3%;
+}
+
+.headerPhoto {
+	clear: left; /* allows for content to go beneath div content */
+	margin-left: 250px;
+	line-height: 5%;
+	padding-top: 3%;
+}
+
+.headerDigital {
+	clear: left; /* allows for content to go beneath div content */
+	margin-left: 250px;
+	line-height: 5%;
+	padding-top: 3%;
+}
+
+.headerAnimate {
+	clear: left; /* allows for content to go beneath div content */
+	margin-left: 250px;
+	line-height: 5%;
+	padding-top: 3%;
+}
+
+.headerPoetry {
+	clear: left; /* allows for content to go beneath div content */
+	margin-left: 250px;
+	line-height: 5%;
+	padding-top: 3%;
+}
+
+.headerOthers {
+	clear: left; /* allows for content to go beneath div content */
+	margin-left: 250px;
+	line-height: 5%;
+	padding-top: 3%;
+}
+
+.headerPopular{
+	clear: left; /* allows for content to go beneath div content */
+	margin-left: 250px;
+	line-height: 5%;
+	padding-top: 3%;
+}
+/**************************************/
+
+
+
+/*
+ *	SKETCH SECTION
+ */
+#image_container {
+	/*width: 80%;*/
+	text-align: center;
+	font: 10pt normal Arial, sans-serif;
+	height: auto;
+}
+
+#image_container .box {
+	border: 5px solid #fff;
+	cursor: pointer;
+	float: left;
+	margin: 5px;
+	position: relative;
+	overflow: hidden;
+	height: 182px;
+	width: 182px;
+	-webkit-box-shadow: 1px 1px 1px 1px #ccc;
+	-moz-box-shadow: 1px 1px 1px 1px #ccc;
+	box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+#image_container .box img {
+	position: absolute;
+	left: 0;
+	-webkit-transition: all 100ms ease-out;
+	-moz-transition: all 100ms ease-out;
+	-o-transition: all 100ms ease-out;
+	-ms-transition: all 100ms ease-out;
+	transition: all 100ms ease-out;
+}
+
+#image_container .box .caption {
+	background-color: rgba(0,0,0,0.8);
+	position: absolute;
+	color: #fff;
+	z-index: 100;
+	-webkit-transition: all 100ms ease-out;
+	-moz-transition: all 100ms ease-out;
+	-o-transition: all 100ms ease-out;
+	-ms-transition: all 100ms ease-out;
+	transition: all 100ms ease-out;
+	left: 0;
+}
+
+#image_container .box .fade-caption {
+	opacity: 0;
+	width: 182px;
+	height: 182px;
+	text-align: left;
+	padding: 15px;
+}
+
+#image_container .box:hover .fade-caption {
+	opacity: 1;
+}
+
+
+/*
+ *	PAINT SECTION
+ */
+
+#paintWrapper {
+	font: 10pt normal Arial, sans-serif;
+	height: auto;
+	margin-left: 220px;
+	text-align: center;
+}
+
+#paintWrapper .box {
+	border: 5px solid #fff;
+	cursor: pointer;
+	float: left;
+	margin: 5px;
+	position: relative;
+	overflow: hidden;
+	height: 182px;
+	width: 182px;
+	-webkit-box-shadow: 1px 1px 1px 1px #ccc;
+	-moz-box-shadow: 1px 1px 1px 1px #ccc;
+	box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+#paintWrapper .box img {
+	position: absolute;
+	left: 0;
+	-webkit-transition: all 100ms ease-out;
+	-moz-transition: all 100ms ease-out;
+	-o-transition: all 100ms ease-out;
+	-ms-transition: all 100ms ease-out;
+	transition: all 100ms ease-out;
+}
+
+#paintWrapper .box .caption {
+	background-color: rgba(0,0,0,0.8);
+	position: absolute;
+	color: #fff;
+	z-index: 100;
+	-webkit-transition: all 100ms ease-out;
+	-moz-transition: all 100ms ease-out;
+	-o-transition: all 100ms ease-out;
+	-ms-transition: all 100ms ease-out;
+	transition: all 100ms ease-out;
+	left: 0;
+}
+
+#paintWrapper .box .fade-caption {
+	opacity: 0;
+	width: 182px;
+	height: 182px;
+	text-align: left;
+	padding: 15px;
+}
+
+#paintWrapper .box:hover .fade-caption {
+	opacity: 1;
+}
+
+/**
+ *	PHOTO SECTION
+ **/
+
+#photoWrapper {
+	font: 10pt normal Arial, sans-serif;
+	height: auto;
+	margin-left: 220px;
+	text-align: center;
+}
+
+#photoWrapper .box {
+	border: 5px solid #fff;
+	cursor: pointer;
+	float: left;
+	margin: 5px;
+	position: relative;
+	overflow: hidden;
+	height: 182px;
+	width: 182px;
+	-webkit-box-shadow: 1px 1px 1px 1px #ccc;
+	-moz-box-shadow: 1px 1px 1px 1px #ccc;
+	box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+#photoWrapper .box img {
+	position: absolute;
+	left: 0;
+	-webkit-transition: all 100ms ease-out;
+	-moz-transition: all 100ms ease-out;
+	-o-transition: all 100ms ease-out;
+	-ms-transition: all 100ms ease-out;
+	transition: all 100ms ease-out;
+}
+
+#photoWrapper .box .caption {
+	background-color: rgba(0,0,0,0.8);
+	position: absolute;
+	color: #fff;
+	z-index: 100;
+	-webkit-transition: all 100ms ease-out;
+	-moz-transition: all 100ms ease-out;
+	-o-transition: all 100ms ease-out;
+	-ms-transition: all 100ms ease-out;
+	transition: all 100ms ease-out;
+	left: 0;
+}
+
+#photoWrapper .box .fade-caption {
+	opacity: 0;
+	width: 182px;
+	height: 182px;
+	text-align: left;
+	padding: 15px;
+}
+
+#photoWrapper .box:hover .fade-caption {
+	opacity: 1;
+}
+
+/**
+ *	DIGITAL DESIGNS SECTION
+ **/
+
+#digitalWrapper {
+	font: 10pt normal Arial, sans-serif;
+	height: auto;
+	margin-left: 220px;
+	text-align: center;
+}
+
+#digitalWrapper .box {
+	border: 5px solid #fff;
+	cursor: pointer;
+	float: left;
+	margin: 5px;
+	position: relative;
+	overflow: hidden;
+	height: 182px;
+	width: 182px;
+	-webkit-box-shadow: 1px 1px 1px 1px #ccc;
+	-moz-box-shadow: 1px 1px 1px 1px #ccc;
+	box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+#digitalWrapper .box img {
+	position: absolute;
+	left: 0;
+	-webkit-transition: all 100ms ease-out;
+	-moz-transition: all 100ms ease-out;
+	-o-transition: all 100ms ease-out;
+	-ms-transition: all 100ms ease-out;
+	transition: all 100ms ease-out;
+}
+
+#digitalWrapper .box .caption {
+	background-color: rgba(0,0,0,0.8);
+	position: absolute;
+	color: #fff;
+	z-index: 100;
+	-webkit-transition: all 100ms ease-out;
+	-moz-transition: all 100ms ease-out;
+	-o-transition: all 100ms ease-out;
+	-ms-transition: all 100ms ease-out;
+	transition: all 100ms ease-out;
+	left: 0;
+}
+
+#digitalWrapper .box .fade-caption {
+	opacity: 0;
+	width: 182px;
+	height: 182px;
+	text-align: left;
+	padding: 15px;
+}
+
+#digitalWrapper .box:hover .fade-caption {
+	opacity: 1;
+}
+

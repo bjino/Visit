@@ -15,16 +15,18 @@
 .cube > div {
   position: absolute;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 0px;
   height: 100%;
   width: 100%;
-  background-color: #000;
-  border: solid 1px #eeeeee;
-  color: #ffffff;
+  background-color: white;
+  border:1px solid transparent;
+  color: white;
+  z-index: 1;
 }
 
 .front {
   transform: translateZ(200px);
+  
   background-color: white;
   background-size: cover;
   background-repeat: no-repeat;
@@ -42,7 +44,7 @@
 .right {
   transform: rotateY(-270deg) translateX(200px);
   transform-origin: top right;
-  background: url(http://www.bringchange.in/wp-content/uploads/2015/05/Breakfast_by_PascalCampion.jpg);
+  background: white;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -55,15 +57,17 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  border:1px solid transparent;
 }
 
 .top {
   transform: rotateX(-270deg) translateY(-200px);
   transform-origin: top center;
-    background: url(http://api.ning.com/files/kV4MbYiv7oTb0Y2A70Gubl9o6GonrxcdXuwJr4a24eKDrBW2MamOzbZuWMEGFE9GaKkEOw7cqppMYjRjjGp3PMNFixzAOaXX/1082044758.jpeg);
+  background:transparent;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  border:1px solid transparent;
 }
 
 .bottom {
@@ -76,15 +80,90 @@
 }
 
 @keyframes rotate {
-  from {
-    transform: rotateX(0deg) rotateY(0deg);
-  }
+  0% { -webkit-transform: rotateY(0deg); }
+    100% { -webkit-transform: rotateY(360deg); }
   
-  to {
-    transform: rotateX(0deg) rotateY(360deg);
-  }
 }
 
 .cube {
-  animation: rotate 30s infinite linear;
+  animation: rotate 40s infinite linear;
+}
+
+
+.gallery {
+  width: 100%;
+  height:100%;
+  background: white;
+  
+}
+  
+.gallery > div {
+  width:50%;
+  height:33.3%;
+  position: relative;
+  float:left;
+  padding:5px;
+}
+
+#cp1{
+  background:url(http://www.committee-design.com/blog/wp-content/uploads/2010/07/pascal-campion-05-600x356.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#cp2{
+  background:url(http://orig13.deviantart.net/3aa1/f/2013/074/2/5/2501db_by_pascalcampion-d5y3t0a.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#cp3{
+  background:url(http://api.ning.com/files/DtcI2O2Ry7BGymVCcjLPikb5AkbdyTEsGFbQn3BemOGhxAr7yTjACpYvH2M48rD3BfphypjiLdFF*pT96JpJl2iEhNyUu443/1082131553.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#cp4{
+  background:url(http://img13.deviantart.net/a757/i/2010/029/4/a/bridge_by_pascalcampion.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#cp5{
+  background:url(http://www.cronos4.tv/wp-content/uploads/2011/03/07_PascalCampion.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#cp6{
+  background:url(http://img10.deviantart.net/7a7f/i/2011/010/d/7/kitty_cat_by_pascalcampion-d36v1ht.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.gallery > div:hover {
+  z-index: 1000;
+ transform: scale(1.6,1.6);
+  transition: .5s transform;
+}
+
+
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
+
+#left{
+  padding-right:0px;
 }

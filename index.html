@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -23,10 +22,61 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/navbar-pretty.css">
         <link rel="stylesheet" href="css/cube.css">
+        <link rel="stylesheet" href="css/login-modal.css">
+        <link rel="stylesheet" href="css/signup.css"
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
+
+
+<!-- LOGIN MODAL -->
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+        <div class="loginmodal-container">
+          <h1>Login to Your Account</h1><br>
+
+          <form action="home.html">
+          <input type="text" name="user" placeholder="Username">
+          <input type="password" name="pass" placeholder="Password">
+          <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+          </form>
+          
+          <div class="login-help">
+          <a href="#">Register</a> - <a href="#">Forgot Password</a>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+<!-- SIGNUP MODAL -->
+<div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+        <div class="loginmodal-container">
+          <h1>Signup</h1><br>
+
+          <form action="home.html">
+          Username
+          <input type="text" name="Username" placeholder="Username">
+          Email Address
+          <input type="text" name="Email Address" placeholder="Email@email.com">
+          Password
+          <input type="password" name="Password" placeholder="Password">
+          Confirm Password
+          <input type="password" name="Confirm Password" placeholder="Password">
+          <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+          </form>
+          
+          <div class="login-help">
+          <a href="#">Terms of Service</a></a>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -39,7 +89,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Visit</a>
+          <a class="navbar-brand" href="index.html">Visit<br><h6>A place for beautiful minds</h6></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-left" role="form">
@@ -54,7 +104,7 @@
            <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Popular</a></li>
+            <li><a href="popular.html">Popular</a></li>
             <li><a href="#">Staff Picks</a></li>
             <li><a href="#">Weekly Challenge</a></li>
             <li role="separator" class="divider"></li>
@@ -70,8 +120,8 @@
         </li>
               <li><a href="#">Upload</a></li>
               <li><a href="#">Blog</a></li>
-              <li><a href="#">Login</a></li>
-              <li><a href="#">Signup</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#signup-modal">Signup</a></li>
           </u1>
         </div><!--/.navbar-collapse -->
       </div>
@@ -80,34 +130,36 @@
 
     <div class="container" id="theBody">
       <!-- Example row of columns -->
-      <div class="row">
-  <div class="wrap">
-  <div class="cube">
-    <div class="front">
-<iframe width="100%" height="100%" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/202110583&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-    </div>
-    <div class="back">
-      Artist: Glenn
-    </div>
-    <div class="top">
-      Artist: Charu
-    </div>
-    <div class="bottom">
-      Artist: Alyssa
-    </div>
-    <div class="left">
-      <h1> How I Met Your Mother </h1>
-      <h2>"When Im sad I stop being sad and start being awesome instead"<h2>
-      -Barney Stinson <br>
-        &nbsp;&nbsp;&nbsp;-Michael Scott" <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Byron Inocencio
-    </div>
-    <div class="right">
-      Artist: Steven
-    </div>
-  </div>
+        <div class="wrap">
+        <div class="cube">
+        <div class="front">
+          <iframe width="100%" height="100%" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/213886153&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+        </div>
+        <div class="back">
+          Artist: Glenn
+        </div>
+        <div class="top">
+          Charu
+        </div>
+        <div class="bottom">
+          Alyssa
+        </div>
+        <div class="left">
+          <div class = "gallery">
+            <div class ="cubePart" id="cp1" class="left"></div>
+            <div class ="cubePart" id="cp2"></div>
+            <div class ="cubePart" id="cp3" class="left"></div>
+            <div class ="cubePart" id="cp4"></div>
+            <div class ="cubePart" id="cp5" class="left"></div>
+            <div class ="cubePart" id="cp6"></div>
+          </div>
+        </div>
+        <div class="right">
+          <iframe src="https://player.vimeo.com/video/119343870" width="100%" height="100%" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+          </iframe>
+        </div>
+        </div>
 </div>
-      </div>
     </div> 
 
   <div class="container" id="theFeet">
@@ -116,7 +168,12 @@
       </footer>
   </div>
 
-<!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+
+
+<!-- /container -->        
+        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
@@ -125,12 +182,12 @@
         <script src="js/dropdown.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
+        <!--<script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
+        </script>-->
     </body>
